@@ -1,33 +1,42 @@
 
+import os
+import shutil
+import subprocess
+import pandas as pd
+import os
+import requests
+import json
 import streamlit as st
-st.title("Estética 360!")
-st.write("Welcome!")
+import pandas as pd
+import plotly.express as px
 
-# Input para o funil em formato R$
-leads_input = st.number_input("Quantos leads", format="%i", step=1000)
+# Configuração da página
+welcome = st.Page(
+    "view/welcome.py",
+    title="Welcome",
+    icon="👋",
+)
 
-# Botão para calcular
-if st.button("Calcular Funil"):
-    # Definindo as porcentagens
-    agendamentos_pct = 0.30  # 30%
-    comparecimentos_pct = 0.50  # 50%
-    ticket_medio = 1300  # Valor em R$
+leads_funnel = st.Page(
+    "view/leads_funnel.py",
+    title="leads_funnel",
+    icon="🧮",
+)
 
-    # Calculando os valores
-    agendamentos = int(leads_input * agendamentos_pct)
-    comparecimentos = int(agendamentos * comparecimentos_pct)
-    faturamento = comparecimentos * ticket_medio
+funil_de_vendas = st.Page(
+    "view/funil_de_vendas.py",
+    title="jogo da funil_de_vendas",
+    icon="💀",
+)
 
-    # Exibindo os resultados com formatação mais amigável
-    st.success("Seu funil foi gerado com sucesso!")
-    
-    # Exibição mais bonita dos resultados
-    st.write("### Resultados do Funil:")
-    
-    st.metric(label="Agendamentos (30%)", value=f"{agendamentos}")
-    st.metric(label="Comparecimentos (50%)", value=f"{comparecimentos}")
-    st.metric(label="Ticket Médio", value=f"R$ {ticket_medio:,.2f}")
-    st.metric(label="Faturamento Estimado", value=f"R$ {faturamento:,.2f}")
-    
-    # Balões para dar um toque especial
-    st.balloons()
+
+# Configuração da navegação
+pg = st.navigation(
+    {
+        "Boas Vindas 👋": [welcome],
+        "Funil de Leads": [leads_funnel],
+        "Funil de Vendas": [funil_de_vendas]
+    }
+)
+
+pg.run()
