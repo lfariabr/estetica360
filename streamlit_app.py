@@ -30,7 +30,7 @@ def load_page(page):
 page_path = pages[selected_page]
 load_page(page_path)
 
-# Footer estilizado
+# Footer estilizado e centralizado
 st.markdown(
     """
     <style>
@@ -41,10 +41,15 @@ st.markdown(
         text-align: center;
         color: #888;
         padding: 10px;
+        background-color: #f1f1f1; /* Adicionando um fundo suave para destacar */
+        font-size: 14px; /* Ajuste do tamanho da fonte */
+    }
+    .footer p {
+        margin: 0; /* Remove a margem para centralizar melhor */
     }
     </style>
     <div class="footer">
-        <p>Estética360 © 2024 | Desenvolvido por Luis</p>
+        <p>360estetic©2024 | Pró-Corpo Labs</p>
     </div>
     """,
     unsafe_allow_html=True
