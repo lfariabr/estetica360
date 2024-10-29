@@ -5,7 +5,7 @@ import streamlit as st
 st.image("https://www.360estetica.com.br/images/logo-dark.png", width=300)
 
 # Título e introdução
-st.title("360 Estética by Marisa Peraro")
+st.title("360 Estética")
 st.subheader("Gestão Estética Eficiente")
 
 # Detalhes do evento
