@@ -2,36 +2,52 @@
 import os
 import shutil
 import subprocess
-import os
 import streamlit as st
 
-# Configuração da página
-welcome = st.Page(
-    "views/welcome.py",
-    title="Welcome",
-    icon="👋",
+# Configuração da página e navegação
+st.set_page_config(
+    page_title="Estética 360",
+    page_icon="💅",
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
 
-leads_funnel = st.Page(
-    "views/leads_funnel.py",
-    title="leads_funnel",
-    icon="🧮",
-)
+# Definição das páginas do app
+pages = {
+    "👋 Boas Vindas": "views/welcome.py",
+    "🧮 Funil de Leads": "views/leads_funnel.py",
+    "💀 Funil de Vendas": "views/sales_funnel.py",
+}
 
-sales_funnel = st.Page(
-    "views/sales_funnel.py",
-    title="jogo da sales_funnel",
-    icon="💀",
-)
+# Sidebar com seleção de páginas
+st.sidebar.title("Menu Estética360")
+selected_page = st.sidebar.radio("Navegação", options=pages.keys())
 
+# Função para carregar e executar o código da página selecionada
+def load_page(page):
+    with open(page, "r") as file:
+        exec(file.read(), globals())
 
-# Configuração da navegação
-pg = st.navigation(
-    {
-        "Menu Estética360": [welcome, leads_funnel, sales_funnel],
-        # "Funil de Leads": [leads_funnel],
-        # "Funil de Vendas": [sales_funnel]
+# Carregar a página selecionada
+page_path = pages[selected_page]
+load_page(page_path)
+
+# Footer estilizado
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #888;
+        padding: 10px;
     }
+    </style>
+    <div class="footer">
+        <p>Estética360 © 2024 | Desenvolvido por Luis</p>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
-
-pg.run()
