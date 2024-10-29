@@ -1,6 +1,6 @@
 
 import streamlit as st
-st.title("Funil de Leads!")
+st.title("Funil de Leads")
 st.write("Método Estética360 by Marisa Peraro!")
 st.markdown("---")
 
