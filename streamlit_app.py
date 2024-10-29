@@ -1,22 +1,20 @@
 
 import os
-import shutil
-import subprocess
 import streamlit as st
 
 # Configuração da página e navegação
 st.set_page_config(
     page_title="Estética 360",
-    page_icon="💅",
+    page_icon="💎",  # Ícone global da página (diamante)
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# Definição das páginas do app
+# Definição das páginas do app com ícones personalizados
 pages = {
-    "👋 Boas Vindas": "views/welcome.py",
-    "🧮 Funil de Leads": "views/leads_funnel.py",
-    "💀 Funil de Vendas": "views/sales_funnel.py",
+    "💎 Boas Vindas": "views/welcome.py",  # Ícone de diamante
+    "⭐ Funil de Leads": "views/leads_funnel.py",  # Ícone de estrela
+    "💰 Funil de Vendas": "views/sales_funnel.py",  # Ícone de dinheiro
 }
 
 # Sidebar com seleção de páginas
