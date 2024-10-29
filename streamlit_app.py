@@ -30,7 +30,7 @@ def load_page(page):
 page_path = pages[selected_page]
 load_page(page_path)
 
-# Footer estilizado e centralizado
+# Footer estilizado e alinhado à esquerda
 st.markdown(
     """
     <style>
@@ -38,14 +38,14 @@ st.markdown(
         position: fixed;
         bottom: 0;
         width: 100%;
-        text-align: center;
-        color: #888;
+        text-align: left;  /* Alinha o texto à esquerda */
+        color: #ccc;  /* Cor do texto em cinza claro */
         padding: 10px;
-        background-color: #f1f1f1; /* Adicionando um fundo suave para destacar */
-        font-size: 14px; /* Ajuste do tamanho da fonte */
+        background-color: transparent;  /* Fundo transparente */
+        font-size: 14px;  /* Tamanho da fonte ajustado */
     }
     .footer p {
-        margin: 0; /* Remove a margem para centralizar melhor */
+        margin: 0;  /* Remove a margem padrão do parágrafo */
     }
     </style>
     <div class="footer">
