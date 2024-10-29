@@ -7,20 +7,20 @@ import streamlit as st
 
 # Configuração da página
 welcome = st.Page(
-    "view/welcome.py",
+    "views/welcome.py",
     title="Welcome",
     icon="👋",
 )
 
 leads_funnel = st.Page(
-    "view/leads_funnel.py",
+    "views/leads_funnel.py",
     title="leads_funnel",
     icon="🧮",
 )
 
-funil_de_vendas = st.Page(
-    "view/funil_de_vendas.py",
-    title="jogo da funil_de_vendas",
+sales_funnel = st.Page(
+    "views/sales_funnel.py",
+    title="jogo da sales_funnel",
     icon="💀",
 )
 
@@ -30,7 +30,7 @@ pg = st.navigation(
     {
         "Boas Vindas 👋": [welcome],
         "Funil de Leads": [leads_funnel],
-        "Funil de Vendas": [funil_de_vendas]
+        "Funil de Vendas": [sales_funnel]
     }
 )
 
