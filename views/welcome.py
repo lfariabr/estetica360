@@ -1,7 +1,5 @@
-import streamlit as st
 
-# Configuração do layout e estilo da página
-st.set_page_config(page_title="Boas Vindas", page_icon="💎", layout="wide")
+import streamlit as st
 
 # Estilo customizado com CSS
 st.markdown(
