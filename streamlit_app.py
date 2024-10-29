@@ -28,9 +28,9 @@ sales_funnel = st.Page(
 # Configuração da navegação
 pg = st.navigation(
     {
-        "Boas Vindas 👋": [welcome],
-        "Funil de Leads": [leads_funnel],
-        "Funil de Vendas": [sales_funnel]
+        "Menu Estética360": [welcome, leads_funnel, sales_funnel],
+        # "Funil de Leads": [leads_funnel],
+        # "Funil de Vendas": [sales_funnel]
     }
 )
 
