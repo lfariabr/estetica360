@@ -2,13 +2,8 @@
 import os
 import shutil
 import subprocess
-import pandas as pd
 import os
-import requests
-import json
 import streamlit as st
-import pandas as pd
-import plotly.express as px
 
 # Configuração da página
 welcome = st.Page(
