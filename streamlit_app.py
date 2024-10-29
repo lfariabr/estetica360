@@ -13,7 +13,7 @@ st.set_page_config(
 # Definição das páginas do app com ícones personalizados
 pages = {
     "💎 Boas Vindas": "views/welcome.py",  # Ícone de diamante
-    "⭐ Funil de Leads": "views/leads_funnel.py",  # Ícone de estrela
+    "🚀 Funil de Leads": "views/leads_funnel.py",  # Ícone de estrela
     "💰 Funil de Vendas": "views/sales_funnel.py",  # Ícone de dinheiro
 }
 
@@ -49,7 +49,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        <p>360estetic©2024 | Pró-Corpo Labs</p>
+        <p>360 Estética © 2024 | Pró-Corpo Labs</p>
     </div>
     """,
     unsafe_allow_html=True
