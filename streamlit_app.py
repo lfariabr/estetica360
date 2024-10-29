@@ -18,8 +18,16 @@ if st.button("Calcular Funil"):
     comparecimentos = int(agendamentos * comparecimentos_pct)
     faturamento = comparecimentos * ticket_medio
 
-    # Exibindo os resultados
-    st.write(f"Agendamentos (30%): {agendamentos}")
-    st.write(f"Comparecimentos (50%): {comparecimentos}")
-    st.write(f"Ticket Médio: R$ {ticket_medio}")
-    st.write(f"Faturamento estimado: R$ {faturamento:,.2f}")
+    # Exibindo os resultados com formatação mais amigável
+    st.success("Seu funil foi gerado com sucesso!")
+    
+    # Exibição mais bonita dos resultados
+    st.write("### Resultados do Funil:")
+    
+    st.metric(label="Agendamentos (30%)", value=f"{agendamentos}")
+    st.metric(label="Comparecimentos (50%)", value=f"{comparecimentos}")
+    st.metric(label="Ticket Médio", value=f"R$ {ticket_medio:,.2f}")
+    st.metric(label="Faturamento Estimado", value=f"R$ {faturamento:,.2f}")
+    
+    # Balões para dar um toque especial
+    st.balloons()
