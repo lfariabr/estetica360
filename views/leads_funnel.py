@@ -1,7 +1,7 @@
 
 import streamlit as st
-st.title("Estética 360!")
-st.write("Vamos calcular o seu funil de leads!")
+st.title("Funil de Leads!")
+st.write("Método Estética360 by Marisa Peraro!")
 st.markdown("---")
 
 # Input para o funil em formato R$

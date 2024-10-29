@@ -2,8 +2,9 @@
 import streamlit as st
 
 # Título e introdução
-st.title("Estética 360 - Funil de Vendas")
-st.write("Bem-vindo ao Funil de Vendas!")
+st.title("Funil de Vendas!")
+st.write("Método Estética360 by Marisa Peraro!")
+st.markdown("---")
 
 # Input para o faturamento desejado
 faturamento_desejado = st.number_input("Quanto quero faturar? R$", format="%i", step=50000)
