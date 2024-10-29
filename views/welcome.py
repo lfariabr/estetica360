@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 # Estilo customizado com CSS
@@ -7,7 +6,7 @@ st.markdown(
     <style>
     .welcome-title {
         font-size: 3em;
-        color: #FF5F6D;  /* Cor similar ao branding da 360 Estética */
+        color: #FF5F6D;  /* Cor principal */
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
@@ -18,9 +17,11 @@ st.markdown(
         margin-bottom: 30px;
         color: #FFC371;
     }
-    .welcome-button {
-        display: flex;
-        justify-content: center;
+    .event-details {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #FF5F6D;
     }
     .footer {
         position: fixed;
@@ -30,29 +31,28 @@ st.markdown(
         color: #888;
         padding: 10px;
     }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
 
+# Logo da empresa
+st.image("https://www.360estetica.com.br/images/logo-dark.png", width=300)
+
 # Título estilizado
-st.markdown('<div class="welcome-title">Bem-vindo à Estética 360!</div>', unsafe_allow_html=True)
+st.markdown('<div class="welcome-title">360 Estética by Marisa Peraro</div>', unsafe_allow_html=True)
 
-# Texto de boas-vindas estilizado
-st.markdown('<div class="welcome-text">Seu ponto de partida para beleza, bem-estar e tecnologia.</div>', unsafe_allow_html=True)
+# Texto de introdução
+st.markdown('<div class="welcome-text">Gestão Estética Eficiente</div>', unsafe_allow_html=True)
 
-# Botão centralizado
-st.markdown('<div class="welcome-button">', unsafe_allow_html=True)
-if st.button('Explorar Serviços'):
-    st.write("Aqui você pode explorar todos os nossos serviços de estética.")
-st.markdown('</div>', unsafe_allow_html=True)
+# Detalhes do evento
+st.markdown('<div class="event-details">Nos dias <strong>02 e 03 de Novembro</strong>, na <strong>Av. Europa-SP</strong>,<br> aprenda a faturar <strong>R$ 200k/mês</strong> na sua clínica 💰</div>', unsafe_allow_html=True)
 
-# Footer estilizado
-st.markdown(
-    """
-    <div class="footer">
-        <p>Estética360 © 2024 | <a href="https://www.360estetica.com.br/" target="_blank">Visite nosso site</a></p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# Texto adicional com motivação
+st.markdown('<div class="welcome-text">Abrindo os segredos da estética para você faturar 200k/mês.<br>Domine a técnica e a metodologia para aumentar o lucro da sua clínica 🚀</div>', unsafe_allow_html=True)
