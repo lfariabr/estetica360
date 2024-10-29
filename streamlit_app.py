@@ -49,7 +49,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        <p>360 Estética © 2024 | Pró-Corpo Labs</p>
+        <p>360Estética © 2024</p>
     </div>
     """,
     unsafe_allow_html=True

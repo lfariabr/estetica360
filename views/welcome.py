@@ -10,7 +10,7 @@ st.subheader("Gestão Estética Eficiente")
 
 # Detalhes do evento
 st.write("""
-### Nos dias 02 e 03 de Novembro, na Av. Europa-SP,  
+Nos dias 02 e 03 de Novembro, na Av. Europa-SP,  
 aprenda a faturar R$ 200k/mês na sua clínica 💰
 """)
 
