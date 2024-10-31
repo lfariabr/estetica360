@@ -15,6 +15,7 @@ pages = {
     "💎 Boas Vindas": "views/welcome.py",  # Ícone de diamante
     "🚀 Funil de Leads": "views/leads_funnel.py",  # Ícone de estrela
     "💰 Funil de Vendas": "views/sales_funnel.py",  # Ícone de dinheiro
+    "💵 Quiz de Faturamento": "views/how_much_did_you_sell.py",  # Ícone de dinheiro
 }
 
 # Sidebar com seleção de páginas
