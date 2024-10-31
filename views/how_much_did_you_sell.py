@@ -34,10 +34,10 @@ st.markdown("---")
 # faturamento_do_ano = st.number_input("Quanto você vendeu este ano? R$", format="%i", step=50000)
 
 # Instrução para o usuário
-st.write("Insira o quanto você vendeu em 2024. Use apenas números.")
+st.markdown("##### Insira o quanto você vendeu em 2024. Use apenas números.")
 faturamento_do_ano = st.number_input("Quanto você vendeu este ano? R$", format="%d", step=1000)
-st.write("Faturamento informado:", f"R$ {faturamento_do_ano:,.0f}")
 
 if st.button("Enviar"):
     save_to_gsheet(faturamento_do_ano)
+    st.write("Valor enviado:", f"R$ {faturamento_do_ano:,.0f}")
     st.success("Faturamento enviado com sucesso!")
