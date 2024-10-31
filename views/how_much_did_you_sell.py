@@ -1,10 +1,10 @@
 
 import streamlit as st
 import gspread
-import datetime
-import os
-import json
 from google.oauth2 import service_account
+import json
+import io
+import datetime
 
 # Configuração da API do Google Sheets usando variável de ambiente
 def connect_to_gsheet():
