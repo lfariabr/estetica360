@@ -31,7 +31,12 @@ st.write("Método Estética360 by Marisa Peraro!")
 st.markdown("---")
 
 # Input para o faturamento do ano
-faturamento_do_ano = st.number_input("Quanto você vendeu este ano? R$", format="%i", step=50000)
+# faturamento_do_ano = st.number_input("Quanto você vendeu este ano? R$", format="%i", step=50000)
+
+# Instrução para o usuário
+st.write("Insira o quanto você vendeu em 2024. Use apenas números.")
+faturamento_do_ano = st.number_input("Quanto você vendeu este ano? R$", format="%d", step=1000)
+st.write("Faturamento informado:", f"R$ {faturamento_do_ano:,.0f}")
 
 if st.button("Enviar"):
     save_to_gsheet(faturamento_do_ano)
