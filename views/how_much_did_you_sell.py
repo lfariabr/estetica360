@@ -16,7 +16,7 @@ def connect_to_gsheet():
     
     # Conecta ao Google Sheets
     client = gspread.authorize(creds)
-    sheet = client.open("Dados").sheet1  # Mude para o nome da sua planilha
+    sheet = client.open_by_key("1uuU05wNcFLwaGWR8KbWaBiWjsO_eCmF5v4PUsaKFQV8").sheet1
     return sheet
 
 # Função para salvar o valor na planilha
