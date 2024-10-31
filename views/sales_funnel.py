@@ -29,14 +29,14 @@ if st.button("Calcular Funil de Vendas"):
 
     # Exibição dos resultados
     st.write("### Resultados do Funil de Vendas:")
-    st.metric(label="Faturamento Desejado", value=f"R$ {faturamento_desejado:,.2f}")
-    st.metric(label="Ticket Médio (R$)", value=f"R$ {ticket_medio:,.2f}")
+    st.metric(label="Faturamento Desejado", value=f"R$ {faturamento_desejado:,.f}")
+    st.metric(label="Ticket Médio (R$)", value=f"R$ {ticket_medio:,.f}")
     st.metric(label="CPA Meta (R$)", value=f"R$ {cpa_meta:,.2f}")
     st.metric(label="Leads Necessários", value=f"{leads_necessarios}")
     st.metric(label="Agendamentos Necessários (30%)", value=f"{agendamentos_necessarios}")
     st.metric(label="Comparecimentos Necessários (50%)", value=f"{comparecimentos_necessarios}")
     # st.metric(label="Compradores Necessários", value=f"{int(compradores_necessarios)}")
-    st.metric(label="Investimento Necessário (R$)", value=f"R$ {investimento_necessario:,.2f}")
+    st.metric(label="Investimento Necessário (R$)", value=f"R$ {investimento_necessario:,.f}")
 
     # Balões para dar um toque especial
     st.balloons()
