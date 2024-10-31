@@ -35,7 +35,7 @@ st.markdown("---")
 
 # Instrução para o usuário
 st.markdown("##### Insira o quanto você vendeu em 2024.")
-st.markdown("####### Use apenas números.")
+st.markdown("<p style='font-size: 0.8em; color: gray;'>Use apenas números.</p>", unsafe_allow_html=True)
 faturamento_do_ano = st.number_input("Vendas do ano:", format="%d", step=1000)
 
 if st.button("Enviar"):
