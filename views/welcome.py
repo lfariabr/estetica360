@@ -43,15 +43,5 @@ st.markdown("""
 - **Fale Conosco**: Estamos aqui para ajudar você a implementar o método e alcançar os resultados que sua clínica merece.
 """)
 
-# Interactive Buttons
-col1, col2 = st.columns(2)
-
-with col1:
-    if st.button("Funil de Vendas 🤑"):
-        st.session_state.selected_page = "💰 Funil de Vendas"
-
-with col2:
-    if st.button("Quiz de Vendas 💰"):
-        st.session_state.selected_page = "🚀 Funil de Leads"
-
-st.success("Estamos animados para embarcar nessa jornada com vocês! Vamos começar?")
+st.write("🚀 Estamos animados para embarcar nessa jornada com vocês! Vamos começar?")
+st.write("👉 **Clique no menu lateral da esquerda para navegar!**")

@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Estética 360",
     page_icon="💎",  # Ícone global da página (diamante)
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 # Definição das páginas do app com ícones personalizados
