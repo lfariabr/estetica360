@@ -7,13 +7,11 @@ logo_path = os.path.join(base_dir, "logo_metodo.jpeg")
 st.image(logo_path, width=500)
 
 # Título e introdução
-st.title("Bem-vindo ao Método Marisa Peraro")
-st.subheader("Transformando Clínicas em Máquinas de Lucro")
+# st.title("Bem-vindo ao Método Marisa Peraro")
+st.subheader("Bem-vindo! Vamos transformar sua clínica hoje 🚀")
 
 # Apresentação especial para as clínicas
 st.write("""
-**Olá!** Hoje é um dia especial para quem dar um passo à frente no mercado de estética.
-
 Se você está aqui, é porque sabe que sua clínica tem potencial para mais! 
 Faturar **R$200.000/mês** não é um sonho distante, 
 mas uma meta alcançável com as ferramentas certas.
@@ -34,7 +32,7 @@ O mercado da estética é competitivo, mas quem tem um método sólido lidera. O
 práticas e insights de mercado para transformar sua clínica em referência. Imagine fidelizar mais clientes, aumentar
 os atendimentos e fazer sua equipe trabalhar em harmonia com objetivos claros.
 
-Hoje, você está um passo à frente para revolucionar sua clínica. Vamos nessa? 🚀
+Hoje, você está um passo à frente para revolucionar sua clínica.
 """)
 
 # Call-to-action e links
@@ -44,5 +42,18 @@ st.markdown("""
 - [Saiba Mais no Site Oficial](https://www.360estetica.com.br/)
 - **Fale Conosco**: Estamos aqui para ajudar você a implementar o método e alcançar os resultados que sua clínica merece.
 """)
+
+# Interactive Buttons
+col1, col2 = st.columns(2)
+
+with col1:
+    if st.button("Funil de Vendas 🤑"):
+        st.write("Você será redirecionado para o Funil de Vendas...")
+        st.experimental_rerun('/content/estetica360/views/sales_funnel.py')
+
+with col2:
+    if st.button("Quiz de Vendas 💰"):
+        st.write("Você será redirecionado para o Quiz de Vendas...")
+        st.experimental_rerun('/content/estetica360/views/how_much_did_you_sell.py')
 
 st.success("Estamos animados para embarcar nessa jornada com vocês! Vamos começar?")
