@@ -4,7 +4,7 @@ import streamlit as st
 
 base_dir = os.path.dirname(__file__)  # Directory of the current script
 logo_path = os.path.join(base_dir, "logo.jpeg")
-st.image(logo_path, width=300)
+st.image(logo_path)
 
 # Título e introdução
 st.title("Método Marisa Peraro")
