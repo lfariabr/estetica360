@@ -3,7 +3,7 @@ import os
 import streamlit as st
 
 base_dir = os.path.dirname(__file__)  # Directory of the current script
-logo_path = os.path.join(base_dir, "logo.jpeg")
+logo_path = os.path.join(base_dir, "logo_metodo.jpeg")
 st.image(logo_path, width=500)
 
 # Título e introdução
