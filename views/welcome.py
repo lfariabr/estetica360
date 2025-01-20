@@ -12,12 +12,11 @@ st.subheader("Transformando Clínicas em Máquinas de Lucro")
 
 # Apresentação especial para as clínicas
 st.write("""
-**Olá!** Hoje é um dia especial para as 13 clínicas que decidiram dar um passo à frente no mercado de estética. 
-Juntas, vamos explorar como aplicar o **Método Marisa Peraro**, uma abordagem revolucionária que já transformou 
-inúmeras clínicas em negócios altamente lucrativos.
+**Olá!** Hoje é um dia especial para quem dar um passo à frente no mercado de estética.
 
-Se você está aqui, é porque sabe que sua clínica tem potencial para mais. E nós estamos aqui para mostrar que faturar
-**R$200.000/mês** não é um sonho distante, mas uma meta alcançável com as ferramentas certas.
+Se você está aqui, é porque sabe que sua clínica tem potencial para mais! 
+Faturar **R$200.000/mês** não é um sonho distante, 
+mas uma meta alcançável com as ferramentas certas.
 """)
 
 # Benefícios do Método
@@ -25,7 +24,7 @@ st.markdown("""
 ### Por que o Método Marisa Peraro é único?
 - **Estratégias Comprovadas**: Com base em dados e resultados reais.
 - **Gestão Inteligente**: Melhore a eficiência e elimine desperdícios.
-- **Aumento de Faturamento**: Descubra como multiplicar seus lucros sem aumentar custos desnecessários.
+- **Aumento de Vendas**: Multiplique seus lucros com mudanças simples.
 - **Apoio Total**: Acompanhamento personalizado para garantir a aplicação do método em sua clínica.
 """)
 
