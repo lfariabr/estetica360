@@ -48,12 +48,17 @@ col1, col2 = st.columns(2)
 
 with col1:
     if st.button("Funil de Vendas 🤑"):
-        st.write("Você será redirecionado para o Funil de Vendas...")
-        st.experimental_rerun('/content/estetica360/views/sales_funnel.py')
+        st.session_state["page"] = "sales_funnel"
 
 with col2:
     if st.button("Quiz de Vendas 💰"):
-        st.write("Você será redirecionado para o Quiz de Vendas...")
-        st.experimental_rerun('/content/estetica360/views/how_much_did_you_sell.py')
+        st.session_state["page"] = "how_much_did_you_sell"
 
-st.success("Estamos animados para embarcar nessa jornada com vocês! Vamos começar?")
+# Navigation logic
+if "page" in st.session_state:
+    if st.session_state["page"] == "sales_funnel":
+        st.write("Você será redirecionado para o Funil de Vendas...")
+        # Replace this with code to load the sales_funnel.py
+    elif st.session_state["page"] == "how_much_did_you_sell":
+        st.write("Você será redirecionado para o Quiz de Vendas...")
+        # Replace this with code to load the how_much_did_you_sell.py
